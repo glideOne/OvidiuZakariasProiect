@@ -24,16 +24,16 @@
             @Html.DisplayFor(model => model.Album.ReleaseDate)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Album.ArtistId)
+            @Html.DisplayNameFor(model => model.Album.Artist.StageName)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Album.ArtistId)
+            @Html.DisplayFor(model => model.Album.Artist.StageName)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Album.GenreId)
+            @Html.DisplayNameFor(model => model.Album.Genre.Name)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Album.GenreId)
+            @Html.DisplayFor(model => model.Album.Genre.Name)
         </dd>
     </dl>
 </div>

@@ -10,6 +10,7 @@ namespace OvidiuZakariasProiect.Models
     public class Genre
     {
         public int Id { get; set; }
+        [Display(Name = "Genre")]
         public string Name { get; set; }
         [Display(Name = "Stylistic Origins")]
         public string Origins { get; set; }

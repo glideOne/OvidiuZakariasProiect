@@ -12,7 +12,7 @@ namespace OvidiuZakariasProiect.Models
         public int Id { get; set; }
         [Display(Name = "Stage Name (Alias)")]
         public string StageName { get; set; }
-        [Display(Name = "Real Name")]
+        [Display(Name = "Real Name / Lineup")]
         public string RealName { get; set; }
         [Display(Name = "Date of first release")]
         [DataType(DataType.Date)]

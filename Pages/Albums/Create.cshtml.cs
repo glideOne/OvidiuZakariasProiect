@@ -21,6 +21,8 @@ namespace OvidiuZakariasProiect.Pages.Albums
 
         public IActionResult OnGet()
         {
+            ViewData["ArtistId"] = new SelectList(_context.Set<Artist>(), "Id", "StageName");
+            ViewData["GenreId"] = new SelectList(_context.Set<Genre>(), "Id", "Name");
             return Page();
         }
 

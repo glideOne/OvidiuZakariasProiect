@@ -23,7 +23,10 @@ namespace OvidiuZakariasProiect.Pages.Albums
 
         public async Task OnGetAsync()
         {
-            Album = await _context.Album.ToListAsync();
+            Album = await _context.Album
+                .Include(a => a.Artist)
+                .Include(a => a.Genre)
+                .ToListAsync();
         }
     }
 }

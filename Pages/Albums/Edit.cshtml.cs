@@ -36,6 +36,8 @@ namespace OvidiuZakariasProiect.Pages.Albums
             {
                 return NotFound();
             }
+            ViewData["ArtistId"] = new SelectList(_context.Set<Artist>(), "Id", "StageName");
+            ViewData["GenreId"] = new SelectList(_context.Set<Genre>(), "Id", "Name");
             return Page();
         }
 
