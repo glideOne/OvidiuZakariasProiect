@@ -10,6 +10,7 @@ namespace OvidiuZakariasProiect.Models
     public class Album
     {
         public int Id { get; set; }
+        [StringLength(255)]
         public string Name { get; set; }
         [Display(Name = "Release Date")]        
         [DataType(DataType.Date)]

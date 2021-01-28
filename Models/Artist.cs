@@ -11,8 +11,11 @@ namespace OvidiuZakariasProiect.Models
     {
         public int Id { get; set; }
         [Display(Name = "Stage Name (Alias)")]
+        [StringLength(255)]
         public string StageName { get; set; }
         [Display(Name = "Real Name / Lineup")]
+        [StringLength(255)]
+        [RegularExpression("[a-zA-Z\\s-,]+", ErrorMessage = "Name can only contain letters and '-', separated by ','")]
         public string RealName { get; set; }
         [Display(Name = "Date of first release")]
         [DataType(DataType.Date)]
